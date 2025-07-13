@@ -14,35 +14,44 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header class="bg-white text-center p-4 shadow">
-    <h1 class="mb-3">TIENDA OWLKAI</h1>
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" href="comocomprar.html">Cómo Comprar</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="metodosdeenvio.html">Métodos de Envío</a></li>
-        <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <!-- NAVBAR RESPONSIVE -->
+  <nav class="navbar navbar-expand-lg bg-white shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">TIENDA OWLKAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="comocomprar.html">Cómo Comprar</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="metodosdeenvio.html">Métodos de Envío</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main class="container my-5">
     <section class="text-center">
       <h2 class="mb-4">Métodos de Envío</h2>
-      <p class="lead">En Tienda Owlkai ofrecemos diferentes opciones para recibir tus productos:</p>
-      <ul class="list-group text-start mx-auto" style="max-width: 600px;">
-        <li class="list-group-item">Envío a domicilio por correo (llega entre 3 a 7 días hábiles).</li>
-        <li class="list-group-item">Retiro en punto de entrega (podés retirar en sucursales habilitadas).</li>
-        <li class="list-group-item">Entrega personalizada en CABA y Gran Buenos Aires.</li>
+      <p class="lead mb-4">En Tienda Owlkai te damos la libertad de elegir cómo recibir tus productos de forma cómoda, rápida y segura:</p>
+      <ul class="list-group text-start mx-auto mb-4" style="max-width: 700px;">
+        <li class="list-group-item">📦 <strong>Envío a domicilio por correo:</strong> entrega en 3 a 7 días hábiles a cualquier punto del país. Recibirás un código de seguimiento por mail.</li>
+        <li class="list-group-item">🏢 <strong>Retiro en punto de entrega:</strong> seleccioná la sucursal más cercana a tu domicilio y retiralo cuando quieras dentro de los 5 días hábiles siguientes.</li>
+        <li class="list-group-item">🚗 <strong>Entrega personalizada en CABA y GBA:</strong> repartidores propios hacen entregas rápidas en 24 a 48 hs hábiles. Te contactaremos por WhatsApp para coordinar.</li>
+        <li class="list-group-item">💬 <strong>Atención al cliente:</strong> ante cualquier duda podés escribirnos desde la sección <a href="contactos.html">Contacto</a> o por redes sociales.</li>
       </ul>
+      <p class="text-muted">¡Elegí la opción que más se ajuste a tu comodidad!</p>
     </section>
   </main>
 
   <footer class="text-center bg-white py-3 border-top mt-5">
     <p class="mb-0">&copy; 2025 Tienda Owlkai. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
-
-

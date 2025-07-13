@@ -14,30 +14,40 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header class="bg-white text-center p-4 shadow">
-    <h1 class="mb-3">TIENDA OWLKAI</h1>
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="comocomprar.html">Cómo Comprar</a></li>
-        <li class="nav-item"><a class="nav-link" href="metodosdeenvio.html">Métodos de Envío</a></li>
-        <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- NAVBAR RESPONSIVE -->
+  <nav class="navbar navbar-expand-lg bg-white shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">TIENDA OWLKAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="comocomprar.html">Cómo Comprar</a></li>
+          <li class="nav-item"><a class="nav-link" href="metodosdeenvio.html">Métodos de Envío</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main class="container my-5">
     <section class="text-center">
       <h2 class="mb-4">¿Cómo Comprar?</h2>
-      <p class="lead">Comprar en Tienda Owlkai es muy fácil. Seguí estos pasos:</p>
-      <ol class="list-group list-group-numbered text-start mx-auto" style="max-width: 600px;">
-        <li class="list-group-item">Elegí el producto que más te guste.</li>
-        <li class="list-group-item">Presioná el botón "Agregar" para sumarlo al carrito.</li>
-        <li class="list-group-item">Completá tus datos personales y la dirección de envío.</li>
-        <li class="list-group-item">Elegí el método de pago.</li>
-        <li class="list-group-item">Confirmá tu compra y ¡listo!</li>
+      <p class="lead mb-4">Seguí estos pasos simples para realizar tu compra de forma rápida y segura:</p>
+      <ol class="list-group list-group-numbered text-start mx-auto mb-4" style="max-width: 700px;">
+        <li class="list-group-item">Explorá nuestros productos y elegí el que más te guste.</li>
+        <li class="list-group-item">Hacé clic en <strong>"Agregar"</strong> para incorporarlo al carrito.</li>
+        <li class="list-group-item">Una vez que tengas todo lo que querés, accedé al carrito y seleccioná <strong>"Finalizar Compra"</strong>.</li>
+        <li class="list-group-item">Completá tus datos personales y la dirección donde querés recibir tu pedido.</li>
+        <li class="list-group-item">Elegí tu método de pago preferido: tarjeta, transferencia o pago en efectivo.</li>
+        <li class="list-group-item">Revisá tu pedido y hacé clic en <strong>"Confirmar"</strong>.</li>
+        <li class="list-group-item">¡Listo! Te vamos a enviar un correo con el detalle de tu compra y el seguimiento del envío.</li>
       </ol>
+      <p class="text-muted">Si tenés alguna duda, podés contactarnos en la sección de <a href="contactos.html">Contacto</a>.</p>
     </section>
   </main>
 
@@ -46,5 +56,4 @@
   </footer>
 </body>
 </html>
-
 
