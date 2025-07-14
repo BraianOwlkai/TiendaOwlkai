@@ -1,0 +1,11 @@
+$modo-oscuro: false;
+
+body {
+  @if $modo-oscuro {
+    background-color: #111;
+    color: #eee;
+  } @else {
+    background-color: #f2f4f8;
+    color: #333;
+  }
+}

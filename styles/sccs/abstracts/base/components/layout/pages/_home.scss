@@ -1,0 +1,7 @@
+.novedades {
+  .row {
+    @include flex-center(row);
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
