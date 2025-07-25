@@ -1,0 +1,17 @@
+form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-radius: 0.25rem;
+  }
+
+  button[type="submit"] {
+    @include boton-negro;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,29 @@
+.card {
+  background-color: #e5e9f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 15px;
+
+    .card-text {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      @extend .btn-primary;
+    }
+  }
+}
