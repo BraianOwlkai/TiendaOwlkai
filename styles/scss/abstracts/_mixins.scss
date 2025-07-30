@@ -23,3 +23,24 @@
     }
   }
 }
+
+// MIXIN DE BOTÓN PERSONALIZADO
+@mixin btn-custom($bg-color, $text-color, $hover-bg, $hover-text) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-bg;
+    color: $hover-text;
+  }
+}
+
+// MIXIN DE ANIMACIÓN SIMPLE
+@mixin transition($properties...) {
+  transition: $properties;
+}

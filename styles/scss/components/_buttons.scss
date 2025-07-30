@@ -1,13 +1,39 @@
-// Botón principal
-.btn-primary {
-  background-color: $black !important;
-  color: $white !important;
-  border: none;
+// Botones generales
+.btn {
   padding: 10px 20px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: $fuente-principal;
 
   &:hover {
-    background-color: lighten($black, 10%);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+// Botón principal (color personalizado)
+.btn-primary {
+  background-color: $color-primario;
+  color: $color-secundario;
+
+  &:hover {
+    background-color: lighten($color-primario, 10%);
+  }
+}
+
+// Botón secundario (opcional)
+.btn-secondary {
+  background-color: lighten($color-primario, 40%);
+  color: $color-texto;
+
+  &:hover {
+    background-color: lighten($color-primario, 30%);
   }
 }

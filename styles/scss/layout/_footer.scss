@@ -1,6 +1,6 @@
 footer {
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: $color-primario;
+  color: $color-secundario;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
@@ -8,5 +8,11 @@ footer {
 
   p {
     margin: 0;
+    color: $color-secundario;
+  }
+
+  @include respond-to(mobile) {
+    font-size: 0.8rem;
+    padding: 15px;
   }
 }

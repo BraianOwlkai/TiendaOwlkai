@@ -1,17 +1,61 @@
-form {
-  max-width: 600px;
-  margin: 0 auto;
+.form-section {
+  background-color: $color-fondo;
+  padding: 50px 20px;
 
-  .form-label {
-    font-weight: bold;
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: $color-primario;
   }
 
-  .form-control {
-    border-radius: 0.25rem;
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-label {
+      font-weight: bold;
+      color: $color-texto;
+    }
+
+    .form-control {
+      border-radius: 0.25rem;
+      box-shadow: none;
+    }
+
+    button[type="submit"] {
+      @include boton-negro;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
   }
 
-  button[type="submit"] {
-    @include boton-negro;
-    padding: 10px 20px;
+  @include respond-to(mobile) {
+    padding: 40px 10px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    form {
+      .form-label {
+        font-size: 0.95rem;
+      }
+
+      .form-control {
+        font-size: 0.95rem;
+      }
+
+      button[type="submit"] {
+        width: 100%;
+      }
+    }
   }
 }

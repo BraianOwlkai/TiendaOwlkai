@@ -1,14 +1,24 @@
-// VARIABLES DE COLORES
-$color-primario: #000;
-$color-secundario: #fff;
+// COLORES BÁSICOS
+$black: #000;
+$white: #fff;
+
+// PALETA DE COLORES
+$color-primario: $black;
+$color-secundario: $white;
 $color-acento: #6c63ff;
 $color-fondo: #f2f4f8;
 $color-texto: #333;
 
-// TIPOGRAFÍAS
+// ESTADOS (opcional pero útil)
+$color-exito: #28a745;
+$color-error: #dc3545;
+$color-info: #17a2b8;
+$color-warning: #ffc107;
+
+// TIPOGRAFÍA PRINCIPAL
 $fuente-principal: 'Segoe UI', sans-serif;
 
-// BREAKPOINTS
+// BREAKPOINTS RESPONSIVE
 $mobile: 768px;
 $tablet: 992px;
 $desktop: 1200px;

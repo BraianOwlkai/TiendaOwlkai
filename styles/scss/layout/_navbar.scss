@@ -1,25 +1,35 @@
 .navbar {
-  background-color: #fff;
+  background-color: $color-secundario;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
   .navbar-brand {
     font-weight: bold;
-    color: #000;
+    color: $color-primario;
   }
 
   .nav-link {
-    color: #000 !important;
+    color: $color-primario;
     font-weight: 500;
-    text-decoration: none !important;
-    transition: border-bottom 0.3s ease;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
 
     &:hover {
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid $color-primario;
     }
 
     &.active {
       font-weight: bold;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid $color-primario;
+    }
+  }
+
+  @include respond-to(mobile) {
+    .navbar-brand {
+      font-size: 1rem;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
     }
   }
 }
