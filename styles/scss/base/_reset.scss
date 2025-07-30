@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  body {
-  background-color: $color-fondo;
-}
 
+body {
+  background-color: $color-fondo;
+  font-family: $fuente-principal;
+  color: $color-texto;
+  line-height: 1.6;
 }
