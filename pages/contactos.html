@@ -1,9 +1,9 @@
-<!-- Archivo: contactos.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactate con Tienda Owlkai completando nuestro formulario online. Te responderemos a la brevedad." />
   <title>Tienda Owlkai | Contacto</title>
 
   <!-- Bootstrap CDN -->
@@ -16,7 +16,6 @@
 <body>
 
   <header>
-    <!-- NAVBAR RESPONSIVE -->
     <nav class="navbar navbar-expand-lg bg-white shadow">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#">TIENDA OWLKAI</a>
@@ -37,24 +36,30 @@
     </nav>
   </header>
 
-  <main class="container my-5">
+  <main class="container my-5 contacto-section">
     <section class="text-center">
       <h2 class="mb-4">Contacto</h2>
-      <p class="lead">¿Tenés preguntas o querés comunicarte con nosotros? Completá el siguiente formulario:</p>
+      <p class="lead mb-5">¿Tenés preguntas o querés comunicarte con nosotros? Completá el siguiente formulario:</p>
 
-      <form class="mx-auto text-start" style="max-width: 600px;">
+      <form class="mx-auto text-start needs-validation" novalidate style="max-width: 600px;">
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required />
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
+          <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
         </div>
+
         <div class="mb-3">
           <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" name="email" required />
+          <input type="email" class="form-control" id="email" name="email" placeholder="Ej: ejemplo@correo.com" required />
+          <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
         </div>
+
         <div class="mb-3">
           <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+          <div class="invalid-feedback">No olvides escribir tu mensaje.</div>
         </div>
+
         <div class="text-center">
           <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
@@ -66,8 +71,22 @@
     <p class="mb-0">&copy; 2025 Tienda Owlkai. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Validación Bootstrap -->
+  <script>
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+
 </body>
 </html>
-
-
-

@@ -1,4 +1,4 @@
-.form-section {
+.contacto-section {
   background-color: $color-fondo;
   padding: 50px 20px;
 
@@ -20,11 +20,18 @@
     .form-control {
       border-radius: 0.25rem;
       box-shadow: none;
+      font-size: 1rem;
+    }
+
+    .invalid-feedback {
+      color: red;
+      font-size: 0.875rem;
     }
 
     button[type="submit"] {
-      @include boton-negro;
+      @include boton-primario;
       padding: 10px 20px;
+      margin-top: 15px;
       transition: all 0.3s ease;
 
       &:hover {
@@ -45,10 +52,7 @@
     }
 
     form {
-      .form-label {
-        font-size: 0.95rem;
-      }
-
+      .form-label,
       .form-control {
         font-size: 0.95rem;
       }
